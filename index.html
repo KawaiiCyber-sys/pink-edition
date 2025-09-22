@@ -93,7 +93,6 @@
 <script>
   const _storedHash = '3211ba43b8253cb6ed51f8011de2c5208b3f688c18924735c436fa6487e3fb68';
 
-  // Split Base64 chunks of the examol URL (hidden until 5s)
   const targetUrlParts = [
     'aHR0cHM6Ly9leGFtb2wuZWR1bGluay5pZC9leGFtb2wvP0thdGFLdW5jaT1z',
     'bWFudGljJmFwcHM9ZVhhbU9M'
@@ -111,14 +110,18 @@
   const pw = document.getElementById('pw');
   const err = document.getElementById('errorMsg');
   const windowDiv = document.querySelector('.window');
-  const loadingDiv = document.getElementById('loading');
-
-  // Show the window after 5 seconds
-  setTimeout(() => {
-    loadingDiv.style.display = 'none';
-    windowDiv.style.display = 'block';
-    pw.focus();
-  }, 5000);
+  
+  // Create loading element dynamically
+  const loadingDiv = document.createElement('div');
+  loadingDiv.id = 'loading';
+  loadingDiv.innerHTML = `
+    <div class="loader"></div>
+    <div class="loading-text">Loading...</div>
+  `;
+  loadingDiv.style.display = 'none';
+  loadingDiv.style.textAlign = 'center';
+  loadingDiv.style.marginTop = '40px';
+  document.querySelector('.wrap').appendChild(loadingDiv);
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -128,10 +131,15 @@
     try {
       const h = await sha256Hex(val);
       if (h === _storedHash) {
-        document.body.style.transition = 'filter 240ms';
-        document.body.style.filter = 'brightness(1.15)';
+        // Hide form & show loader
+        windowDiv.style.display = 'none';
+        loadingDiv.style.display = 'block';
+
         const url = decodeTarget();
-        if (url) window.location.href = url;
+        // Show loader for 3 seconds before redirect
+        setTimeout(() => {
+          if (url) window.location.href = url;
+        }, 3000);
       } else {
         showError('Incorrect password — try again.');
         pw.value = '';
@@ -152,23 +160,7 @@
   document.getElementById('clearBtn').addEventListener('click', ()=>{
     pw.value=''; err.textContent=''; pw.focus();
   });
-
-  (function bubbleGen(){
-    function createBubble(){
-      const b = document.createElement('div');
-      b.className = 'bubble';
-      const size = 12 + Math.random()*36;
-      b.style.width = b.style.height = size + 'px';
-      b.style.left = (5 + Math.random()*90) + 'vw';
-      const colors = ['rgba(255,182,220,0.55)','rgba(255,240,245,0.55)','rgba(210,180,255,0.45)'];
-      b.style.background = colors[Math.floor(Math.random()*colors.length)];
-      const dur = 8000 + Math.random()*7000;
-      b.style.animationDuration = dur + 'ms';
-      document.body.appendChild(b);
-      setTimeout(()=>b.remove(), dur + 200);
-    }
-    setInterval(createBubble, 900);
-  })();
 </script>
+
 </body>
 </html>
