@@ -1,6 +1,69 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><title>Edulink Pink Edition — Secure Prompt</title><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"><style>:root{--accent:#ff8dc7;--accent2:#2b2b2b;--text:#ffe3f2;--shadow:rgba(255,140,200,0.5)}*,*::before,*::after{box-sizing:border-box}html,body{height:100%;margin:0;padding:0;font-family:'Quicksand',sans-serif;color:var(--text);background:#000 url('https://wallpaperaccess.com/full/14069487.jpg') center/cover no-repeat;position:relative}body::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.6);z-index:0}html::before{content:'';position:fixed;top:-110%;left:-50%;width:300%;height:300%;opacity:.25;pointer-events:none;z-index:9999;animation:grain 15s steps(10) infinite;background-image:url('https://media.discordapp.net/attachments/1129082383073824788/1137360648821538876/786b01f22de3ef61b52c17fa468fff34.gif?width=300&height=360')}@keyframes grain{70%{transform:translate(0%,15%)}}.wrap{min-height:100%;display:flex;justify-content:center;align-items:center;padding:20px;position:relative;z-index:3}.window{width:100%;max-width:400px;background:var(--accent2);border:4px solid var(--accent);border-radius:24px;box-shadow:0 10px 28px var(--shadow);padding:24px;text-align:center;overflow:hidden;position:relative}.titlebar{font-family:'Fredoka One',cursive;font-size:20px;color:var(--accent);margin-bottom:12px}.logo{margin-bottom:12px}.xp-frame{display:inline-block;background:#ffeef7;border:2px solid #d63384;border-radius:6px;padding:4px;box-shadow:inset -1px -1px #fff,inset 1px 1px #b03070,2px 2px 6px rgba(0,0,0,.4)}.xp-frame img{max-width:100px;border-radius:2px;display:block}.notice{font-size:14px;color:var(--text);margin-bottom:18px}.panel{background:#ffeef7;border:2px solid #d63384;border-radius:6px;padding:0;font-size:14px;box-shadow:inset -1px -1px #fff,inset 1px 1px #b03070,0 4px 10px rgba(0,0,0,.3);overflow:hidden}.panel::before{content:"Edulink XP ✧";display:block;background:linear-gradient(to bottom,#ff8dc7,#d63384);color:#fff;font-family:'Fredoka One',cursive;font-size:14px;text-align:left;padding:6px 10px;border-bottom:1px solid #a3255f;box-shadow:inset 0 1px #ffc9e1}.panel form{padding:16px}label{display:block;font-size:14px;color:#333;margin-bottom:6px;text-align:left}input[type=password]{width:100%;padding:8px;border-radius:2px;border:2px inset #d63384;background:#fff;color:#333;font-size:13px;box-shadow:inset 1px 1px #ffb3d7,inset -1px -1px #a3255f}.btn-row{display:flex;gap:12px;margin-top:14px}.btn{flex:1;padding:8px;border-radius:4px;border:2px outset #d63384;background:linear-gradient(to bottom,#ffb6dc,#d63384);cursor:pointer;font-family:'Fredoka One',cursive;font-size:13px;color:#fff;box-shadow:inset 0 1px #ffe1f0}.btn:active{border:2px inset #d63384;background:linear-gradient(to top,#ffb6dc,#d63384)}.error{color:#d63384;margin-top:10px;font-size:13px;min-height:18px}.footer{margin-top:20px;font-size:12px;color:#ff8dc7}@media(max-width:400px){.window{padding:16px;border-radius:20px}.titlebar{font-size:18px}input[type=password],.btn{font-size:13px;padding:8px}}.bubble{position:fixed;bottom:-60px;border-radius:50%;pointer-events:none;animation:rise linear forwards;z-index:1}@keyframes rise{from{transform:translateY(0) scale(1);opacity:.8}to{transform:translateY(-120vh) scale(1.4);opacity:0}}</style></head><body>
-<div class="wrap"><div class="window" role="dialog" aria-labelledby="win-title"><div class="titlebar" id="win-title">★ Edulink Pink Edition V 1.0★</div><div class="logo"><div class="xp-frame"><img src="https://cdn.pfps.gg/pfps/2301-watamote.png" alt="Watamote PFP"></div></div><div class="notice">Enter your password to continue</div><div class="panel" id="panel"><form id="pwform" autocomplete="off"><label for="pw">Password</label><input id="pw" type="password" placeholder="••••••" aria-label="password"/><div class="btn-row"><button type="submit" class="btn">✨ Go ✨</button><button type="button" class="btn" id="clearBtn">Clear</button></div><div class="error" id="errorMsg" aria-live="polite"></div></form></div><div class="footer">Made by ShizukaChan~</div></div></div>
+<!-- 
+
+	Created By Shizuka Chan~ 
+	session: 052b6d27fe350c77fe33e3e1f2d8c9cc045ce6b1fd74f38d6561187ae191de1360
+	
+	if you're reading this, that mean you did find the source of my app, if you tried to steal
+	my creation, get lost bozo.
+
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>Edupink — edulink modification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#ffc4e1;--pink-dark:#d16ba5;--black:#1b1b1b;--text:#ffe9f5;--glow:rgba(255,192,203,.6)}
+    html,body{height:100%;margin:0;padding:0;font-family:'Quicksand',sans-serif;color:var(--text);background:var(--black) url('https://wallpaperaccess.com/full/14069487.jpg') center/cover no-repeat;position:relative}
+    body::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55);z-index:0}
+    .wrap{min-height:100%;display:flex;justify-content:center;align-items:center;padding:20px;position:relative;z-index:3}
+    .window{width:100%;max-width:400px;background:rgba(30,30,30,.85);border:3px solid var(--pink);border-radius:24px;box-shadow:0 0 18px var(--glow);padding:24px;text-align:center;backdrop-filter:blur(8px)}
+    .titlebar{font-family:'Fredoka One',cursive;font-size:20px;color:var(--pink);margin-bottom:14px;text-shadow:0 0 8px var(--glow)}
+    .logo{margin-bottom:14px}
+    .xp-frame{display:inline-block;background:#fff;border:2px solid var(--pink-dark);border-radius:8px;padding:4px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+    .xp-frame img{max-width:100px;display:block;border-radius:4px}
+    label{display:block;font-size:14px;color:var(--text);text-align:left;margin-bottom:4px}
+    select,input[type=password]{width:100%;padding:8px;margin-bottom:10px;border:2px inset var(--pink-dark);border-radius:4px;background:#fff;color:#333;font-size:13px}
+    .btn-row{display:flex;gap:10px;margin-top:12px}
+    .btn{flex:1;padding:8px;border-radius:6px;border:2px outset var(--pink-dark);background:linear-gradient(to bottom,var(--pink),var(--pink-dark));cursor:pointer;font-family:'Fredoka One',cursive;font-size:13px;color:#fff;box-shadow:0 0 8px var(--glow);transition:transform .1s}
+    .btn:active{transform:scale(.97);border:2px inset var(--pink-dark)}
+    .error{color:var(--pink);margin-top:8px;font-size:13px;min-height:18px}
+    .bubble{position:fixed;bottom:-60px;border-radius:50%;pointer-events:none;animation:rise linear forwards;z-index:1}
+    @keyframes rise{from{transform:translateY(0) scale(1);opacity:.8}to{transform:translateY(-120vh) scale(1.4);opacity:0}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="window" role="dialog">
+    <div class="titlebar">★ Edulink Pink & Black XP ★</div>
+    <div class="logo"><div class="xp-frame"><img src="https://cdn.pfps.gg/pfps/2301-watamote.png" alt="Profile"></div></div>
+    <form id="pwform" autocomplete="off">
+      <label for="schoolCode">Select School Code</label>
+      <select id="schoolCode">
+        <option value="smantic" selected>sman3cirebon</option>
+        <option value="SMANEPATI">sman4cirebon</option>
+      </select>
+      <label for="pw">Password</label>
+      <input id="pw" type="password" placeholder="••••••" aria-label="password"/>
+      <div class="btn-row">
+        <button type="submit" class="btn">✨ Go ✨</button>
+        <button type="button" class="btn" id="clearBtn">Clear</button>
+      </div>
+      <div class="error" id="errorMsg" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
 <script>
-const _h='3211ba43b8253cb6ed51f8011de2c5208b3f688c18924735c436fa6487e3fb68',_p=['aHR0cHM6Ly9leGFtb2wuZWR1bGluay5pZC9leGFtb2wvP0thdGFLdW5jaT1z','bWFudGljJmFwcHM9ZVhhbU9M'],_w=document.querySelector('.window'),_f=document.getElementById('pwform'),_i=document.getElementById('pw'),_e=document.getElementById('errorMsg');function d(){try{return atob(_p.join(''))}catch(e){console.error(e);return null}}async function s(t){const e=new TextEncoder().encode(t),r=await crypto.subtle.digest('SHA-256',e);return Array.from(new Uint8Array(r)).map(t=>t.toString(16).padStart(2,'0')).join('')}function x(t){_e.textContent=t;document.getElementById('panel').classList.add('shake');setTimeout(()=>document.getElementById('panel').classList.remove('shake'),420)}_f.addEventListener('submit',async t=>{t.preventDefault();const e=_i.value||'';if(!e)return x('Please enter a password.'),_i.focus(),void 0;try{const t=await s(e);if(t===_h){const e=d();if(e)window.location.href=e}else x('Incorrect password — try again.'),_i.value='',_i.focus()}catch(t){console.error(t),x('An error occurred.')}}),document.getElementById('clearBtn').addEventListener('click',()=>{_i.value='';_e.textContent='';_i.focus()});!function(){function t(){const t=document.createElement('div');t.className='bubble';const e=12+36*Math.random();t.style.width=t.style.height=e+'px';t.style.left=5+90*Math.random()+'vw';const r=['rgba(255,182,220,0.55)','rgba(255,240,245,0.55)','rgba(210,180,255,0.45)'];t.style.background=r[Math.floor(Math.random()*r.length)];const n=8e3+7e3*Math.random();t.style.animationDuration=n+'ms';document.body.appendChild(t);setTimeout(()=>t.remove(),n+200)}setInterval(t,900)}(),_i.focus();
+(function(){
+  const _0x1=['d39636e657b4164716b4f3f2c6f6d','6168756f24696e2b6e696c6574656','e2c6f6d6168756f2f2a33707474786'];const _0x2=['c4f4d6168556','d33707071662'];const _0x3=['2cb0db595ff869f2','b65c278638962aac','8d6b82aed49e692a','e7cd442355de5642'];function _0xa(){return _0x3.slice().reverse().join('')}function _0xb(_0xc){try{const _0xd=_0x1.join('');const _0xe=_0x2.join('');const _0xf=_0xd.split('').reverse().join('');const _0x10=_0xe.split('').reverse().join('');return _hexToStr(_0xf)+encodeURIComponent(_0xc)+_hexToStr(_0x10)}catch(_0x11){const _0x12=_0x1.concat(_0x2).join('');const _0x13=_0x12.split('').reverse().join('');return _hexToStr(_0x13)+encodeURIComponent(_0xc)}}
+  function _hexToStr(_0x14){const _0x15=[];for(let i=0;i<_0x14.length;i+=2){_0x15.push(parseInt(_0x14.substr(i,2),16))}return String.fromCharCode.apply(null,_0x15)}
+  async function _0xd(_0x16){const _0x17=new TextEncoder().encode(_0x16);const _0x18=await crypto.subtle.digest('SHA-256',_0x17);return Array.from(new Uint8Array(_0x18)).map(_0x19=>_0x19.toString(16).padStart(2,'0')).join('')}
+  const _0xe=document.getElementById('pwform'),_0xf=document.getElementById('pw'),_0x10=document.getElementById('schoolCode'),_0x11=document.getElementById('errorMsg');_0xe.addEventListener('submit',async function(_0x20){_0x20.preventDefault();_0x11.textContent='';const _0x21=(_0xf.value||'').trim();if(!_0x21){_0x11.textContent=_b64('UGxlYXNlIGVudGVyIGEgcGFzc3dvcmQu');return}try{const _0x22=await _0xd(_0x21);const _0x23=_0xa();if(_0x22===_0x23){const _0x24=_0xb(_0x10.value||'smantic');window.location.href=_0x24}else{_0x11.textContent=_b64('SW5jb3JyZWN0IHBhc3N3b3JkIOKAlCB0cnkgYWdhaW4u');_0xf.value=''}}catch(_0x25){console.error(_0x25);_0x11.textContent=_b64('QW4gZXJyb3IgaGFzIG9jY3VycmVkLg==')}},false);document.getElementById('clearBtn').addEventListener('click',function(){_0xf.value='';_0x11.textContent='';_0x10.selectedIndex=0;_0xf.focus()});_0xf.focus();(function(){function _0x26(){const _0x27=document.createElement('div');_0x27.className='bubble';const _0x28=12+36*Math.random();_0x27.style.width=_0x27.style.height=_0x28+'px';_0x27.style.left=(5+90*Math.random())+'vw';const _0x29=['rgba(255,182,220,0.55)','rgba(255,240,245,0.55)','rgba(210,180,255,0.45)'];_0x27.style.background=_0x29[Math.floor(Math.random()*_0x29.length)];const _0x2a=8000+7000*Math.random();_0x27.style.animationDuration=_0x2a+'ms';document.body.appendChild(_0x27);setTimeout(()=>_0x27.remove(),_0x2a+200)}setInterval(_0x26,900)})();
+  function _b64(s){try{return atob(s)}catch(e){return s}}
+})();
 </script>
-</body></html>
+</body>
+</html>
