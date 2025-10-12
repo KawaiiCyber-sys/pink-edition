@@ -1,0 +1,176 @@
+<!-- 
+
+	Shizuka Chan was here!
+
+-->
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guide - Cara Beli Password</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#ffc4e1;
+    --pink-dark:#d16ba5;
+    --bg:#111;
+    --card:rgba(30,30,30,0.95);
+    --text:#ffe9f5;
+    --muted:#d6a7c4;
+    --glow:0 0 12px rgba(209,107,165,0.18);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    min-height:100vh;
+    font-family:'Quicksand',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:var(--bg) url('https://wallpaperaccess.com/full/14069487.jpg') center/cover no-repeat;
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+  .container{
+    width:100%;
+    max-width:720px;
+    background:linear-gradient(180deg, rgba(18,18,18,0.94), rgba(12,12,12,0.96));
+    border-radius:14px;
+    border:2px solid rgba(255,196,225,0.06);
+    box-shadow:var(--glow);
+    padding:22px;
+  }
+  h1{margin:0 0 8px;font-family:600 20px 'Quicksand',sans-serif;color:var(--pink);text-align:center}
+  p.lead{margin:0 0 16px;color:var(--muted);text-align:center;font-size:14px}
+  .steps{display:flex;flex-direction:column;gap:12px}
+  .step{display:flex;gap:12px;background:linear-gradient(180deg, rgba(255,196,225,0.02), rgba(255,196,225,0.01));border:1px solid rgba(255,196,225,0.03);padding:12px;border-radius:10px;align-items:flex-start}
+  .num{min-width:36px;min-height:36px;border-radius:8px;background:linear-gradient(180deg,var(--pink),var(--pink-dark));display:flex;align-items:center;justify-content:center;font-weight:700;color:#111;font-size:16px;flex-shrink:0}
+  .step-content{flex:1;display:flex;flex-direction:column;justify-content:center}
+  .step-title{font-weight:700;margin:0 0 6px;color:var(--text);font-size:15px}
+  .step-desc{margin:0;color:var(--muted);font-size:13px;line-height:1.4}
+  .links{margin-top:8px}
+  a {color:var(--pink);text-decoration:underline}
+  .chat-box{margin-top:14px;background:#0f0f0f;border:1px solid rgba(255,196,225,0.04);padding:12px;border-radius:10px}
+  .chat-box textarea{width:100%;resize:none;background:transparent;color:var(--text);border:0;outline:none;font-size:13px;line-height:1.4}
+  .center{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:10px}
+  .btn{background:linear-gradient(180deg,var(--pink),var(--pink-dark));color:#fff;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700;box-shadow:var(--glow);font-size:14px}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,196,225,0.06);color:var(--muted);font-weight:600}
+  .note{margin-top:12px;font-size:13px;color:var(--muted);text-align:center}
+  .admin-box{margin-top:16px;background:rgba(255,196,225,0.03);border:1px dashed rgba(255,196,225,0.06);padding:12px;border-radius:8px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+  .admin-id{font-family:monospace;font-size:13px;color:var(--pink);word-break:break-all}
+  .copy-note{font-size:13px;color:var(--muted);display:block;margin-top:8px;text-align:center}
+  @media(min-width:860px){.steps{flex-direction:row}.step{flex-direction:column;align-items:flex-start;flex:1}.num{min-width:44px;min-height:44px}}
+</style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="pageTitle">
+    <h1 id="pageTitle">Cara Beli Password — Singkat & Jelas</h1>
+    <p class="lead">Ikuti 4 langkah ini. Setelah bayar, admin akan kirim password & APK.</p>
+
+    <section class="steps" aria-label="Langkah">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="step-content">
+          <div class="step-title">Unduh aplikasi "Session"</div>
+          <div class="step-desc">
+            Buka Play Store → cari <strong>Session</strong> → tekan Install.
+            <div class="links">
+              <em>Alternatif jika HP tidak support:</em><br>
+              • <a href="https://play.google.com/store/apps/details?id=network.loki.messenger" target="_blank" rel="noopener">Download di Play Store</a><br>
+              • <a href="https://github.com/session-foundation/session-android/releases" target="_blank" rel="noopener">Download APK resmi di GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <div class="step-content">
+          <div class="step-title">Buat akun</div>
+          <div class="step-desc">Daftar di aplikasi Session pakai email/nomor. Ikuti instruksi singkat saat pendaftaran.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div class="step-content">
+          <div class="step-title">Tambah Session ID admin</div>
+          <div class="step-desc">Di bawah ada tombol plus → tekan → tekan new messages → masukkan Session ID admin (lihat box di bawah).</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">4</div>
+        <div class="step-content">
+          <div class="step-title">Chat & Bayar</div>
+          <div class="step-desc">Chat admin lewat Session → kirim bukti pembayaran → tunggu admin kirim password + APK.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="chat-box" aria-label="Contoh pesan chat">
+      <div style="font-weight:700;margin-bottom:8px;color:var(--pink)">Contoh pesan cepat (copy & paste):</div>
+      <textarea rows="3" id="chatMsg">Halo admin, saya ingin beli password. Ini Session ID saya: [isi Session ID]. Mohon info pembayaran. Terima kasih.</textarea>
+      <div class="center">
+        <button class="btn" id="copyBtn">Salin Pesan</button>
+        <button class="btn ghost" onclick="location.href='index.html'">Kembali ke Login</button>
+      </div>
+      <div id="copyNote" class="copy-note" style="display:none;color:var(--pink)">Teks berhasil disalin. Buka Session & paste pesan.</div>
+    </div>
+
+    <div class="admin-box" role="region" aria-label="Session ID admin">
+      <div>
+        <div style="font-size:13px;color:var(--muted)">Session ID admin</div>
+        <div class="admin-id" id="adminId">052b6d27fe350c77fe33e3e1f2d8c9cc045ce6b1fd74f38d6561187ae191de1360</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <button class="btn" id="copyAdmin">Salin ID</button>
+        <div style="font-size:12px;color:var(--muted)">Salin lalu tempel di Session → Tambah kontak</div>
+      </div>
+    </div>
+
+    <p class="note">Admin hanya akan kirim password & APK setelah pembayaran terkonfirmasi. Kalau bingung, tulis "minta bantuan" saat chat.</p>
+  </main>
+
+  <script>
+    (function(){
+      var copyBtn = document.getElementById('copyBtn');
+      var chat = document.getElementById('chatMsg');
+      var note = document.getElementById('copyNote');
+      var copyAdmin = document.getElementById('copyAdmin');
+      var adminIdEl = document.getElementById('adminId');
+
+      copyBtn.addEventListener('click', function(){
+        chat.select();
+        try{
+          document.execCommand('copy');
+          note.style.display = 'block';
+          setTimeout(function(){ note.style.display = 'none'; }, 2300);
+        }catch(e){
+          note.textContent = 'Salin otomatis gagal — blok & copy manual.';
+          note.style.display = 'block';
+          setTimeout(function(){ note.style.display = 'none'; note.textContent = 'Teks berhasil disalin. Buka Session & paste pesan.'; }, 3000);
+        }
+      });
+
+      copyAdmin.addEventListener('click', function(){
+        var text = adminIdEl.textContent || adminIdEl.innerText;
+        try{
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          copyAdmin.textContent = 'Tersalin';
+          setTimeout(function(){ copyAdmin.textContent = 'Salin ID'; }, 2000);
+        }catch(e){
+          alert('Salin gagal — salin manual ID di atas.');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
